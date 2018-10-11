@@ -48,6 +48,7 @@ class ConsumptionUtils {
             if (rate) {
                 var amount = rate.meterRates["0"] * consumptionItem.quantity;
                 var rg = consumptionItem.instanceData ? consumptionItem.instanceData.match(new RegExp('resourceGroups/(.*?)/')) : '';
+                var rg2 = consumptionItem.instanceData ? consumptionItem.instanceData.match(new RegExp('resourceTag/(.*?)/')) : '';
 
                 resultsArr.push(
                     {
@@ -59,7 +60,8 @@ class ConsumptionUtils {
                         meterDescription: rate.unit + " of " + (rate.meterSubCategory ? rate.meterSubCategory : rate.meterCategory),
                         usageStartTime: consumptionItem.usageStartTime,
                         usageEndTime: consumptionItem.usageEndTime,
-                        resourceGroup: rg ? rg[1] : ''
+                        resourceGroup: rg ? rg[1] : '',
+                        resourceTag: rg2 ? rg2[1] : '',
                     }
                 );
             }
