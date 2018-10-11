@@ -23,7 +23,7 @@
         },
         "repoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/Azure-Samples/consumption-cost-node.git",
+            "defaultValue": "https://github.com/dvpg1992/consumption-cost-node.git",
             "metadata": {
                 "description": "Repo URL"
             }
@@ -73,7 +73,8 @@
                 "MS-AZR-0063P",
                 "MS-AZR-0064P",
                 "MS-AZR-0025P",
-                "MS-AZR-0015P"
+                "MS-AZR-0015P",
+                "MS-AZR-0017P"
             ],
             "metadata": {
                 "description": "Your offer type. More details here: https://azure.microsoft.com/en-us/support/legal/offer-details/"
