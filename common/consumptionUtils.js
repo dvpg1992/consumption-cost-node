@@ -61,7 +61,7 @@ class ConsumptionUtils {
                         usageStartTime: consumptionItem.usageStartTime,
                         usageEndTime: consumptionItem.usageEndTime,
                         resourceGroup: rg ? rg[1] : '',
-                        resourceTag: rg2 ? rg2[1] : '',
+                        resourceTag: rg2 ? rg2[1] : ''
                     }
                 );
             }
